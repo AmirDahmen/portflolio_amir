@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz - Capitales des Pays</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="javascript/script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo">Amir</a>
+        <nav class="navigation">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="index.html#about" class="nav-link">Education</a>
+            <a href="skills.html" class="nav-link">Skills</a>
+            <a href="quizz.html" class="nav-link">Quizz</a>
+            <a href="index.html#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <section class="main">
+        <div class="quizz-content">
+            <h2 class="quizz-title">Quizz sur les Capitales des Pays</h2>
+            <form id="quizzForm">
+                <div class="quizz-question">
+                    <label for="q1">1. Quelle est la capitale de la France?</label>
+                    <input type="radio" id="q1a" name="q1" value="paris">
+                    <label for="q1a">Paris</label>
+                    <input type="radio" id="q1b" name="q1" value="berlin">
+                    <label for="q1b">Berlin</label>
+                </div>
+                <div class="quizz-question">
+                    <label for="q2">2. Quelle est la capitale de l'Allemagne?</label>
+                    <input type="radio" id="q2a" name="q2" value="berlin">
+                    <label for="q2a">Berlin</label>
+                    <input type="radio" id="q2b" name="q2" value="paris">
+                    <label for="q2b">Paris</label>
+                </div>
+                <div class="quizz-question">
+                    <label for="q3">3. Quelle est la capitale de l'Italie?</label>
+                    <input type="radio" id="q3a" name="q3" value="rome">
+                    <label for="q3a">Rome</label>
+                    <input type="radio" id="q3b" name="q3" value="madrid">
+                    <label for="q3b">Madrid</label>
+                </div>
+                <div class="quizz-question">
+                    <label for="q4">4. Quelle est la capitale du Japon?</label>
+                    <input type="radio" id="q4a" name="q4" value="tokyo">
+                    <label for="q4a">Tokyo</label>
+                    <input type="radio" id="q4b" name="q4" value="beijing">
+                    <label for="q4b">Beijing</label>
+                </div>
+                <div class="quizz-question">
+                    <label for="q5">5. Quelle est la capitale du Brésil?</label>
+                    <input type="radio" id="q5a" name="q5" value="brasilia">
+                    <label for="q5a">Brasilia</label>
+                    <input type="radio" id="q5b" name="q5" value="buenos aires">
+                    <label for="q5b">Buenos Aires</label>
+                </div>
+                <div class="quizz-question">
+                    <label for="q6">6. Quelle est la capitale de la Russie?</label>
+                    <input type="radio" id="q6a" name="q6" value="moscow">
+                    <label for="q6a">Moscow</label>
+                    <input type="radio" id="q6b" name="q6" value="st petersburg">
+                    <label for="q6b">St Petersburg</label>
+                </div>
+                <div class="quizz-question">
+                    <label for="q7">7. Quelle est la capitale de l'Inde?</label>
+                    <input type="radio" id="q7a" name="q7" value="new delhi">
+                    <label for="q7a">New Delhi</label>
+                    <input type="radio" id="q7b" name="q7" value="mumbai">
+                    <label for="q7b">Mumbai</label>
+                </div>
+                <div class="quizz-question">
+                    <label for="q8">8. Quelle est la capitale du Canada?</label>
+                    <input type="radio" id="q8a" name="q8" value="ottawa">
+                    <label for="q8a">Ottawa</label>
+                    <input type="radio" id="q8b" name="q8" value="toronto">
+                    <label for="q8b">Toronto</label>
+                </div>
+                <div class="quizz-question">
+                    <label for="q9">9. Quelle est la capitale de l'Australie?</label>
+                    <input type="radio" id="q9a" name="q9" value="canberra">
+                    <label for="q9a">Canberra</label>
+                    <input type="radio" id="q9b" name="q9" value="sydney">
+                    <label for="q9b">Sydney</label>
+                </div>
+                <div class="quizz-question">
+                    <label for="q10">10. Quelle est la capitale de l'Espagne?</label>
+                    <input type="radio" id="q10a" name="q10" value="madrid">
+                    <label for="q10a">Madrid</label>
+                    <input type="radio" id="q10b" name="q10" value="lisbon">
+                    <label for="q10b">Lisbon</label>
+                </div>
+
+                <!-- Bouton  valider -->
+                <button type="button" id="submitQuizzBtn" onclick="validateQuizz()">Valider</button>
+
+                <div id="correctAnswersList"></div>
+            </form>
+            <p id="quizzResult"></p>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <p class="copyright">&copy; Amir Dahmen 2024</p>
+        <a href="https://www.facebook.com/amir.dahmen.37?locale=fr_FR" target="_blank" class="facebook-logo"></a>
+    </footer>
+
+</body>
+
+</html>
